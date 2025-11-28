@@ -11,7 +11,7 @@ interface ConvertedFile {
   id: string
   name: string
   size: string
-  format: "JPG" | "PNG"
+  format: string
   status: "Ready" | "Converting..." | "Done"
   progress?: number
   downloadUrl?: string
