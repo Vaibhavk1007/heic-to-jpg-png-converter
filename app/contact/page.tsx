@@ -1,8 +1,5 @@
 "use client";
 
-export const metadata = {
-  title: "Contact | YourSiteName",
-}
 
 export default function ContactPage() {
   return (
