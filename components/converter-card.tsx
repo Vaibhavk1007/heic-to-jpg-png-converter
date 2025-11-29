@@ -68,13 +68,16 @@ export default function ConverterCard({
         boxShadow: "0 10px 30px rgba(0, 0, 0, 0.15)",
       }}
     >
-      {/* Title & Subtitle */}
+      {/* Title & Subtitle (tool-level, not page-level) */}
       <div className="text-center space-y-2">
-        <h1 className="text-3xl md:text-4xl font-semibold text-balance" style={{ color: "#2A2A2A" }}>
-          Convert HEIC to JPG or PNG in seconds
-        </h1>
+        <h2
+          className="text-2xl md:text-3xl font-semibold text-balance"
+          style={{ color: "#2A2A2A" }}
+        >
+          Convert your HEIC photos in a few clicks
+        </h2>
         <p className="text-base md:text-lg" style={{ color: "#556B5B" }}>
-          Secure, fast, and lossless conversion right in your browser.
+          Upload HEIC, JPG or PNG images and convert them instantly in your browser.
         </p>
       </div>
 
@@ -101,7 +104,13 @@ export default function ConverterCard({
       )}
 
       {/* File List */}
-      {files.length > 0 && <FileList files={files} onRemoveFile={onRemoveFile} onDownload={onDownload} />}
+      {files.length > 0 && (
+        <FileList
+          files={files}
+          onRemoveFile={onRemoveFile}
+          onDownload={onDownload}
+        />
+      )}
 
       {/* Action Buttons */}
       <ActionButtons

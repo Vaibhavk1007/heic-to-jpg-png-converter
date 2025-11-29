@@ -1,7 +1,10 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 
-export const metadata = {
-  title: "Privacy Policy | YourSiteName",
+export const metadata: Metadata = {
+  title: "Privacy Policy – HEIC Convert",
+  description:
+    "Learn how HEIC Convert handles your photos and data. All HEIC to JPG / PNG conversions happen locally in your browser – we do not store or upload your images.",
 }
 
 export default function PrivacyPage() {
@@ -18,11 +21,12 @@ export default function PrivacyPage() {
         <div className="space-y-6 text-gray-700 leading-relaxed">
           <p>
             This Privacy Policy explains how{" "}
-            <span className="font-semibold">YourSiteName</span> collects, uses,
-            and protects information when you use our image conversion
-            service at <span className="text-[#3674B5]">yourdomain.com</span>.
+            <span className="font-semibold">HEIC Convert</span> handles your
+            information when you use our image conversion service at{" "}
+            <span className="text-[#3674B5]">formyxa.com</span>.
           </p>
 
+          {/* 1. Information we process */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
               1. Information We Process
@@ -33,78 +37,93 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>
-                <span className="font-semibold">Files you upload</span> for
-                conversion (e.g., HEIC, JPG, PNG, WEBP).
+                <span className="font-semibold">
+                  Images you work with in your browser
+                </span>{" "}
+                for conversion (e.g., HEIC, JPG, PNG, WEBP). These files are
+                processed locally on your device and are not uploaded to our
+                servers.
               </li>
               <li>
                 <span className="font-semibold">Technical data</span> such as
                 your IP address, browser type, device type, and basic usage
-                statistics (for example: number of conversions).
+                statistics (for example: number of visits or which pages are
+                used most), collected via analytics tools.
               </li>
               <li>
                 <span className="font-semibold">Contact information</span> if
-                you contact us via email or the contact form.
+                you contact us via email or the contact form (for example, your
+                name and email address).
               </li>
             </ul>
           </section>
 
+          {/* 2. How we use your files */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
-              2. How We Use Your Files
+              2. How We Use Your Images
             </h2>
             <p>
-              Files you upload are used only for performing the requested
-              conversion. We do not manually review your files or use them to
-              train AI models.
+              Image conversion is performed entirely in your browser using
+              client-side code. Your HEIC, JPG or PNG files are{" "}
+              <strong>not uploaded</strong> to our servers, and we do not store
+              or manually review your images.
             </p>
             <p className="mt-2">
-              We aim to delete converted files from our servers automatically
-              after a short period of time. However, we recommend that you do
-              not upload highly sensitive or confidential material.
+              The converted files are held temporarily in your browser&apos;s
+              memory to allow you to download them. When you refresh the page or
+              close the tab, those files are lost. Even though we do not receive
+              a copy of your images, we still recommend that you avoid using the
+              service for highly sensitive or confidential content.
             </p>
           </section>
 
+          {/* 3. Cookies & analytics */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
               3. Cookies & Analytics
             </h2>
             <p>
               We may use basic analytics tools and cookies to understand
-              anonymous usage patterns (for example, how many conversions per
-              day, which formats are used most). This helps us improve the
-              service.
+              anonymous usage patterns (for example, how many visits per day and
+              which features are used most). This helps us improve the service.
             </p>
             <p className="mt-2">
-              You can control or disable cookies in your browser settings. Some
-              features may not work perfectly without cookies.
+              These analytics do not give us access to the images you convert.
+              You can control or disable cookies in your browser settings, but
+              some features may not work perfectly without them.
             </p>
           </section>
 
+          {/* 4. Data sharing */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
               4. Data Sharing
             </h2>
             <p>
               We do not sell your personal information. We may share limited
-              technical data with trusted service providers (for example,
-              hosting providers or analytics tools) who help us operate the
-              website. They are required to protect your data and only use it
-              for providing their services to us.
+              technical data with trusted service providers (for example, hosting
+              providers, content delivery networks, or analytics tools) who help
+              us operate the website. They are required to protect your data and
+              only use it to provide services to us.
             </p>
           </section>
 
+          {/* 5. Data security */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
               5. Data Security
             </h2>
             <p>
-              We use reasonable technical and organisational measures to
-              protect your data. However, no method of transmission over the
-              internet or electronic storage is completely secure. Use the
-              service at your own risk and avoid uploading sensitive content.
+              We use reasonable technical and organisational measures to protect
+              the data we control. However, no method of transmission over the
+              internet or method of electronic storage is completely secure. Use
+              the service at your own risk and avoid uploading or converting
+              extremely sensitive content on shared or untrusted devices.
             </p>
           </section>
 
+          {/* 6. Your rights */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
               6. Your Rights
@@ -112,15 +131,20 @@ export default function PrivacyPage() {
             <p>
               Depending on your location, you may have certain rights regarding
               your personal data, such as the right to access, correct, or
-              request deletion of your information. You can contact us at{" "}
-              <a href="mailto:hello@yourdomain.com" className="text-[#3674B5]">
-                hello@yourdomain.com
+              request deletion of information we hold about you (for example,
+              when you contact us). You can email us at{" "}
+              <a
+                href="mailto:hello@formyxa.com"
+                className="text-[#3674B5]"
+              >
+                hello@formyxa.com
               </a>{" "}
-              to make such a request, and we will do our best to respond within
-              a reasonable time.
+              to make such a request, and we will do our best to respond within a
+              reasonable time.
             </p>
           </section>
 
+          {/* 7. Changes */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
               7. Changes to This Policy
@@ -133,6 +157,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
+          {/* 8. Contact */}
           <section>
             <h2 className="text-xl font-semibold text-[#123265] mb-2">
               8. Contact Us
@@ -144,18 +169,24 @@ export default function PrivacyPage() {
                 contact page
               </Link>{" "}
               or email{" "}
-              <a href="mailto:hello@yourdomain.com" className="text-[#3674B5]">
+              <a
+                href="mailto:hello@yourdomain.com"
+                className="text-[#3674B5]"
+              >
                 hello@yourdomain.com
               </a>
               .
             </p>
+            {/* 👇 Added "Back to Homepage" section */}
+            <div className="pt-10 border-t border-gray-200 mt-10 text-center">
+              <Link
+                href="/"
+                className="inline-block bg-[#3674B5] text-white px-5 py-2 rounded-lg shadow hover:bg-[#2f5fa0] transition"
+              >
+                ← Back to Homepage
+              </Link>
+            </div>
           </section>
-
-          <p className="text-xs text-gray-500 mt-6">
-            This is a simple, generic Privacy Policy template and does not
-            constitute legal advice. For a real production product, please ask a
-            qualified lawyer to review or prepare your policy.
-          </p>
         </div>
       </div>
     </main>
