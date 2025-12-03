@@ -21,7 +21,7 @@ export default function AdPlaceholder({ width = "728", height = "90", inline = f
         }}
       >
         <p className="text-xs md:text-sm text-center" style={{ color: "#578FCA" }}>
-          Ad space – {width}×{height}
+          {/* Ad space – {width}×{height} */}
         </p>
       </div>
     </div>
