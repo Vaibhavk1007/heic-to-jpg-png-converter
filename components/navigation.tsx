@@ -20,6 +20,20 @@ export default function Navigation() {
             How it works
           </a>
           <a
+            href="/what-is-heic"
+            className="text-sm md:text-base hover:opacity-80 transition-opacity"
+            style={{ color: "#2A2A2A" }}
+          >
+            What is HEIC?
+          </a>
+          <a
+            href="/about"
+            className="text-sm md:text-base hover:opacity-80 transition-opacity"
+            style={{ color: "#2A2A2A" }}
+          >
+            About
+          </a>
+          <a
             href="/privacy"
             className="text-sm md:text-base hover:opacity-80 transition-opacity"
             style={{ color: "#2A2A2A" }}
