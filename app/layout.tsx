@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import Script from "next/script";
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -146,6 +147,14 @@ export default function RootLayout({
               plausible.init();
             `,
           }}
+        />
+
+        <Script
+          id="adsense-init"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598776319431655"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
       </head>
       <body className="font-sans antialiased">
