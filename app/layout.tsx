@@ -116,6 +116,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-1598776319431655"
+        />
         {/* Structured data */}
         <script
           type="application/ld+json"
