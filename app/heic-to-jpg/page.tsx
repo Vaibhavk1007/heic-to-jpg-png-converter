@@ -368,12 +368,10 @@ export default function Home() {
           {/* 🔹 SEO H1 + subheadline */}
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-              Convert HEIC to JPG or PNG Online (Free, Secure)
+              Formyxa — Free HEIC to JPG Converter | AI Blog Writer & Email Writer Tools
             </h1>
             <p className="mt-3 text-sm md:text-base text-gray-600">
-              Use this free HEIC converter to turn your iPhone HEIC photos into standard JPG
-              or PNG files. All conversions happen in your browser — no signup, no image
-              uploads to our servers.
+              Formyxa is a suite of smart AI tools including a free HEIC to JPG converter, AI Blog Writer, AI Email Writer, and more.
             </p>
           </div>
           

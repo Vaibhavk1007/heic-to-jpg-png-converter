@@ -9,9 +9,11 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Free HEIC to JPG / PNG Converter – Fast, Secure Image Conversion",
+  // 🔥 Brand-focused title
+  title:
+    "Formyxa — Free HEIC to JPG Converter | AI Blog Writer & Email Writer Tools",
   description:
-    "Convert HEIC images to JPG or PNG directly in your browser. Fast, free, and secure HEIC converter with no image uploads and full privacy.",
+    "Formyxa is a suite of smart AI tools including a free HEIC to JPG / PNG converter, AI Blog Writer, and AI Email Writer to help you work faster.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -31,17 +33,19 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   openGraph: {
-    title: "Free HEIC to JPG / PNG Converter",
+    // 🔥 Brand in OG title too
+    title:
+      "Formyxa — Free HEIC to JPG Converter & AI Writing Tools",
     description:
-      "Convert HEIC photos to JPG or PNG in your browser. Fast, free, private HEIC converter.",
-    url: "https://formyxa.com/heic-to-jpg",
-    siteName: "Formyxa HEIC Converter",
+      "Use Formyxa to convert HEIC photos to JPG / PNG in your browser and access AI tools like Blog Writer and Email Writer.",
+    url: "https://formyxa.com",
+    siteName: "Formyxa",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "HEIC to JPG / PNG Converter",
+        alt: "Formyxa — HEIC to JPG / PNG Converter & AI Tools",
       },
     ],
   },
@@ -52,7 +56,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const siteUrl = "https://formyxa.com/heic-to-jpg"
+  // 🔥 Canonical should be root domain
+  const siteUrl = "https://formyxa.com"
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -100,12 +105,12 @@ export default function RootLayout({
   const webAppJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "HEIC to JPG / PNG Converter",
+    name: "Formyxa — HEIC to JPG / PNG Converter",
     url: siteUrl,
     applicationCategory: "MultimediaApplication",
     operatingSystem: "Web",
     description:
-      "Convert HEIC images to JPG or PNG directly in your browser. Fast, free, and secure online HEIC converter.",
+      "Formyxa offers a free HEIC to JPG / PNG converter and AI tools to help you work faster.",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -134,7 +139,6 @@ export default function RootLayout({
         <link rel="canonical" href={siteUrl} />
 
         {/* Plausible Analytics */}
-        {/* Privacy-friendly analytics by Plausible */}
         <script
           async
           src="https://plausible.io/js/pa-gPoEbX13yb9IRied8_i-U.js"
